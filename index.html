@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-800 text-white p-6 hidden md:block">
+            <h2 class="text-2xl font-bold mb-6">Dashboard</h2>
+            <nav>
+                <ul>
+                    <li class="mb-4"><a href="#" class="hover:text-gray-400">🏠 Home</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-gray-400">📊 Analytics</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-gray-400">⚙️ Settings</a></li>
+                    <li class="mb-4"><a href="#" class="hover:text-gray-400">📩 Messages</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col">
+            <!-- Navbar -->
+            <header class="bg-white shadow-md p-4 flex justify-between items-center">
+                <h2 class="text-xl font-semibold">Dashboard</h2>
+                <input type="text" placeholder="Search..." class="border p-2 rounded-lg">
+            </header>
+            
+            <!-- Dashboard Content -->
+            <main class="p-6 flex-1">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Cards -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold">📈 Total Sales</h3>
+                        <p class="text-2xl font-bold">$12,450</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold">👥 Users</h3>
+                        <p class="text-2xl font-bold">5,320</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-semibold">📦 Orders</h3>
+                        <p class="text-2xl font-bold">2,134</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
